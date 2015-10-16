@@ -33,6 +33,10 @@ filetype plugin indent on    " required
 " Use Space as my leader key.
 let mapleader = "\<Space>"
 
+" LeaderMappings
+" " .vimrc
+nmap <leader>so :source $MYVIMRC<cr>
+" " Markdown #TODO: Change to imap!
 nmap <leader>dd :r ! date +"\%d.\%m.\%y"<CR>
 nmap <leader>[ i<Space><Esc>la<Space>
 nmap <leader>] xi*<Space>
@@ -41,3 +45,6 @@ nmap <leader>] xi*<Space>
 syntax enable
 set background=dark
 colorscheme solarized
+
+" autorebalance windows on vim resize
+autocmd VimResized * :wincmd =

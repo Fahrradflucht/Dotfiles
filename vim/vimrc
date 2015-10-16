@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -31,6 +32,10 @@ filetype plugin indent on    " required
 
 " Use Space as my leader key.
 let mapleader = "\<Space>"
+
+nmap <leader>dd :r ! date +"\%d.\%m.\%y"<CR>
+nmap <leader>[ i<Space><Esc>la<Space>
+nmap <leader>] xi*<Space>
 
 " Configure Theme 
 syntax enable

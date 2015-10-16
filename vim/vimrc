@@ -48,3 +48,6 @@ colorscheme solarized
 
 " autorebalance windows on vim resize
 autocmd VimResized * :wincmd =
+
+" Linenumbers
+set number relativenumber

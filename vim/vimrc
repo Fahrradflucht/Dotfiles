@@ -14,6 +14,11 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'gcmt/taboo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,6 +45,10 @@ nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>dd :r ! date +"\%d.\%m.\%y"<CR>
 nmap <leader>[ i<Space><Esc>la<Space>
 nmap <leader>] xi*<Space>
+nmap <leader>tm :TableModeToggle	
+
+" InsertModeMappings
+imap <C-s> <esc>:w<cr>
 
 " Configure Theme 
 syntax enable
@@ -50,4 +59,10 @@ colorscheme solarized
 autocmd VimResized * :wincmd =
 
 " Linenumbers
-set number relativenumber
+set number! relativenumber
+
+" Whitespace preferences
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype eruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype markdown setlocal ts=2 sw=2 expandtab

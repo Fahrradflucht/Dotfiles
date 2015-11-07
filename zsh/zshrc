@@ -83,3 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
+
+# ~/.zshrc
+# # enable control-s and control-q
+stty start undef
+stty stop undef
+setopt noflowcontrol

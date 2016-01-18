@@ -13,6 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'rust-lang/rust.vim'	
+Plugin 'mattn/emmet-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -51,15 +53,16 @@ nmap <leader>tm :TableModeToggle
 imap <C-s> <esc>:w<cr>
 
 " Configure Theme 
-syntax enable
-set background=dark
-colorscheme solarized
+" syntax enable
+" set background=dark
+" colorscheme solarized
 
 " autorebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
 " Linenumbers
 set number! relativenumber
+set numberwidth=3
 
 " Whitespace preferences
 autocmd Filetype html setlocal ts=2 sw=2 expandtab

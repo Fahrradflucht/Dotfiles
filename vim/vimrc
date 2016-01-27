@@ -24,8 +24,10 @@ Plugin 'gcmt/taboo.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive'
-
+Plugin 'tpope/vim-fugitive' 
+Plugin 'benjifisher/matchit.zip'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,11 +44,15 @@ let mapleader = "\<Space>"
 nmap <leader>so :source $MYVIMRC<cr>
 " " Insert current date
 nmap <leader>dd :r ! date +"\%d.\%m.\%y"<CR>
+" " Replace line with unnamed register.
+nmap <leader>rr Pj"_dd
 " " RSpec.vim mappings
 nmap <Leader>t :call RunCurrentSpecFile()<CR>
 nmap <Leader>s :call RunNearestSpec()<CR>
 nmap <Leader>l :call RunLastSpec()<CR>
 nmap <Leader>a :call RunAllSpecs()<CR>
+" " Rails.vim mappings
+nmap <Leader>. :A<CR>
 " " Fugitive.vim mappings
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gc :Gcommit<CR>
@@ -66,6 +72,8 @@ autocmd VimResized * :wincmd =
 " Linenumbers
 set number! relativenumber
 set numberwidth=3
+
+set smarttab 
 
 " Whitespace preferences
 autocmd Filetype html setlocal ts=2 sw=2 expandtab

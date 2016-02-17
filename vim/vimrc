@@ -15,6 +15,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'rust-lang/rust.vim'	
 Plugin 'rhysd/vim-crystal'
+Plugin 'pangloss/vim-javascript'
 Plugin 'mattn/emmet-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'scrooloose/nerdtree'
@@ -81,3 +82,4 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype eruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2

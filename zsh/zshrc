@@ -90,4 +90,8 @@ stty start undef
 stty stop undef
 setopt noflowcontrol
 
+# Create and change directory
+function mkcd() {
+	mkdir "$1" && cd "$1"
+}
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

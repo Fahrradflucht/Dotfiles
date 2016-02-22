@@ -6,3 +6,4 @@ tap 'homebrew/bundle'
 brew 'wget'
 
 cask 'slack'
+cask 'chromium'

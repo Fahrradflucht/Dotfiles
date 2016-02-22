@@ -4,3 +4,5 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 
 brew 'wget'
+
+cask 'slack'

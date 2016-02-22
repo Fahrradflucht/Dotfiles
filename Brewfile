@@ -5,5 +5,6 @@ tap 'homebrew/bundle'
 
 brew 'wget'
 
+cask '1Password'
 cask 'chromium'
 cask 'slack'

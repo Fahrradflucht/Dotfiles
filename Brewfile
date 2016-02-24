@@ -7,5 +7,7 @@ brew 'wget'
 
 cask '1Password'
 cask 'chromium'
+cask 'macfusion'
 cask 'nylas-n1'
 cask 'slack'
+cask 'sshfs'

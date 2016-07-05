@@ -87,5 +87,7 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype eruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType json setlocal shiftwidth=2 tabstop=2 expandtab
+
 " CtrlP custom ignores
 let g:ctrlp_custom_ignore = 'node_modules'

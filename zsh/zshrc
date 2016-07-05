@@ -105,3 +105,7 @@ function mkcd() {
 	mkdir "$1" && cd "$1"
 }
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# Set ANDROID HOME
+export ANDROID_HOME=~/Library/Android/sdk
+# Add Android Tools to Path
+export PATH="$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:${PATH}"

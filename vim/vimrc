@@ -61,6 +61,8 @@ nmap <Leader>. :A<CR>
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gc :Gcommit<CR>
 nmap <Leader>ga :Gwrite<CR>
+" " NERDtree
+nmap <Leader>n :NERDTreeToggle<CR>
 
 " InsertModeMappings
 imap <C-s> <esc>:w<cr>
